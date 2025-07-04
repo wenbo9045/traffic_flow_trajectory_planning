@@ -1,26 +1,17 @@
 {
   "name": "ROS Noetic Workspace",
   "image": "osrf/ros:noetic-desktop-full",
-  "forwardPorts": [11311, 6080],          // ROS Master & Gazebo端口
+  "forwardPorts": [11311, 6080, 9090],
   "postCreateCommand": "bash .devcontainer/setup.sh",
-  "features": {
-    "ghcr.io/devcontainers/features/python:1": {
-      "version": "3.9"
-    }
-  },
   "customizations": {
     "vscode": {
       "extensions": [
         "ms-iot.vscode-ros",
-        "ms-python.python",
         "ms-vscode.cpptools",
         "twxs.cmake"
       ]
     }
   },
-  "hostRequirements": {
-    "cpus": 4,
-    "memory": "16gb",
-    "gpu": true  // GPU加速Gazebo渲染:cite[7]
-  }
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
+  "workspaceFolder": "/workspace"
 }
