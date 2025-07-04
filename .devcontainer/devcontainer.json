@@ -3,10 +3,16 @@
   "image": "osrf/ros:noetic-desktop-full",
   "forwardPorts": [11311, 6080, 9090],
   "postCreateCommand": "bash .devcontainer/setup.sh",
+  "features": {
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.9"
+    }
+  },
   "customizations": {
     "vscode": {
       "extensions": [
         "ms-iot.vscode-ros",
+        "ms-python.python",
         "ms-vscode.cpptools",
         "twxs.cmake"
       ]
