@@ -40,6 +40,7 @@ cd catkin_ws
 mkdir src
 cd src
 catkin_init_workspace
+source /opt/ros/noetic/setup.bash
 ```
 
 2. clone the code
