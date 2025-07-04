@@ -1,23 +1,17 @@
 {
-  "name": "ROS Noetic Workspace",
-  "image": "osrf/ros:noetic-desktop-full",
-  "forwardPorts": [11311, 6080, 9090],
-  "postCreateCommand": "bash .devcontainer/setup.sh",
+  "name": "ROS-Noetic",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-20.04",
   "features": {
     "ghcr.io/devcontainers/features/python:1": {
-      "version": "3.9"
+      "version": "3.9",
+      "installTools": true
     }
   },
+  "runArgs": ["--net=host"],
+  "postCreateCommand": "bash .devcontainer/setup.sh",
   "customizations": {
     "vscode": {
-      "extensions": [
-        "ms-iot.vscode-ros",
-        "ms-python.python",
-        "ms-vscode.cpptools",
-        "twxs.cmake"
-      ]
+      "extensions": ["ms-python.python", "ms-iot.vscode-ros"]
     }
-  },
-  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind",
-  "workspaceFolder": "/workspace"
+  }
 }
