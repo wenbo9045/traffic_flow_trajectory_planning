@@ -1,0 +1,22 @@
+{
+  "name": "ROS Noetic on Ubuntu20",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  // 启动后自动执行的命令
+  "postCreateCommand": "source /opt/ros/noetic/setup.bash && \
+                       cd ~/workspace && \
+                       rosdep install --from-paths src --ignore-src -y && \
+                       catkin build",
+  "settings": {
+    // 使用 bash
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "ms-iot.vscode-ros",         // ROS 支持
+    "ms-vscode.cpptools",        // C/C++ 支持
+    "ms-python.python"           // Python 支持
+  ],
+  "remoteUser": "root"
+}
