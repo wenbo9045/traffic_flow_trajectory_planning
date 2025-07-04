@@ -48,3 +48,14 @@ if(OOQP_FOUND_INCLUDE AND OOQP_FOUND_LIBS)
 elseif()
   message(STATUS "Cound not find OOQP")
 endif()
+
+# 添加父目录到包含路径
+get_filename_component(OOQP_PARENT_DIR ${OOQP_INCLUDE_DIR} DIRECTORY)
+set(OOQP_INCLUDE_DIRS ${OOQP_INCLUDE_DIR} ${OOQP_PARENT_DIR})
+
+include(FindPackageHandleStandardArgs)
+find_package_handle_standard_args(OOQP
+  REQUIRED_VARS OOQP_INCLUDE_DIR OOQP_LIBRARIES
+)
+
+mark_as_advanced(OOQP_INCLUDE_DIR OOQP_LIBRARIES)
