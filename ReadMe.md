@@ -22,6 +22,8 @@ For running code:
 
 - pcl_ros (sudo apt install ros-noetic-pcl-ros)
 
+- sudo apt install python3-scipy
+
 - ooqp
 
 - glog
