@@ -48,7 +48,7 @@ source /opt/ros/noetic/setup.bash
 2. clone the code
 
 ```
-git clone [https://github.com/flztiii/traffic_flow_trajectory_planning.git](https://github.com/wenbo9045/traffic_flow_trajectory_planning.git)
+git clone https://github.com/wenbo9045/traffic_flow_trajectory_planning.git
 ```
 
 3. install
