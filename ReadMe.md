@@ -9,25 +9,23 @@ https://user-images.githubusercontent.com/20518317/235564429-abe2bb56-9fa1-48ae-
 For running code:
 
 - Ubuntu20.04
-
 - python3.9
-
 - ros-noetic (http://wiki.ros.org/ROS/Installation)
-
-- rospkg (pip install rospkg)
-
-- gym (pip install gym)
-- 
-- pip3 install scipy
-- 
-- pip3 install pandas
-
-- pygame (pip install pygame)
-
+  
 - pcl_ros (sudo apt install ros-noetic-pcl-ros)
 
 - sudo apt-get install -y gfortran libgfortran5
 
+- rospkg (pip3 install rospkg)
+  
+- gym (pip3 install gym)
+  
+- pip3 install scipy
+  
+- pip3 install pandas
+  
+- pygame (pip3 install pygame)
+  
 - ooqp
 
 - glog
