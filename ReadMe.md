@@ -17,14 +17,16 @@ For running code:
 - rospkg (pip install rospkg)
 
 - gym (pip install gym)
+- 
+- pip3 install scipy
+- 
+- pip3 install pandas
 
 - pygame (pip install pygame)
 
 - pcl_ros (sudo apt install ros-noetic-pcl-ros)
-- 
+
 - sudo apt-get install -y gfortran libgfortran5
-- 
-- sudo apt install python3-scipy
 
 - ooqp
 
