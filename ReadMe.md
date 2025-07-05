@@ -9,22 +9,22 @@ https://user-images.githubusercontent.com/20518317/235564429-abe2bb56-9fa1-48ae-
 For running code:
 
 - Ubuntu20.04
-- python3.9
-- ros-noetic (http://wiki.ros.org/ROS/Installation)
   
-- pcl_ros (sudo apt install ros-noetic-pcl-ros)
-
+- python3.8
+  
+- ros-noetic (https://wiki.ros.org/Installation/Ubuntu)
+  
 - sudo apt-get install -y gfortran libgfortran5
 
 - rospkg (pip3 install rospkg)
   
 - gym (pip3 install gym)
   
+- pygame (pip3 install pygame)
+  
 - pip3 install scipy
   
 - pip3 install pandas
-  
-- pygame (pip3 install pygame)
   
 - ooqp
 
@@ -44,7 +44,6 @@ cd catkin_ws
 mkdir src
 cd src
 catkin_init_workspace
-source /opt/ros/noetic/setup.bash
 ```
 
 2. clone the code
@@ -56,8 +55,18 @@ git clone https://github.com/wenbo9045/traffic_flow_trajectory_planning.git
 3. install
 
 ```
-catkin_make -DCMAKE_BUILD_TYPE=Release
+catkin_make -DCMAKE_BUILD_TYPE=Debug
 ```
+
+在服务器安装桌面环境
+sudo apt update
+sudo apt install -y xfce4 xfce4-goodies lightdm dbus-x11 x11-xserver-utils
+安装过程中如果提示选择显示管理器（Display Manager），请选择 lightdm
+
+在服务器上安装 NoMachine 服务端
+wget https://download.nomachine.com/download/9.0/Linux/nomachine_9.0.188_11_amd64.deb -O nomachine.deb
+sudo dpkg -i nomachine.deb
+
 
 # How to use
 
