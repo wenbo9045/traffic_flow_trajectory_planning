@@ -21,7 +21,9 @@ For running code:
 - pygame (pip install pygame)
 
 - pcl_ros (sudo apt install ros-noetic-pcl-ros)
-
+- 
+- sudo apt-get install -y gfortran libgfortran5
+- 
 - sudo apt install python3-scipy
 
 - ooqp
