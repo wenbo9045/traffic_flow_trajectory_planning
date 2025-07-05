@@ -56,9 +56,12 @@ git clone https://github.com/wenbo9045/traffic_flow_trajectory_planning.git
 
 ```
 catkin_make -DCMAKE_BUILD_TYPE=Debug
+
+catkin_make -DCMAKE_BUILD_TYPE=Release
 ```
 
 在服务器安装桌面环境
+
 sudo apt update
 
 sudo apt install -y xfce4 xfce4-goodies lightdm dbus-x11 x11-xserver-utils
@@ -66,6 +69,7 @@ sudo apt install -y xfce4 xfce4-goodies lightdm dbus-x11 x11-xserver-utils
 安装过程中如果提示选择显示管理器（Display Manager），请选择 lightdm
 
 在服务器上安装 NoMachine 服务端
+
 wget https://download.nomachine.com/download/9.0/Linux/nomachine_9.0.188_11_amd64.deb -O nomachine.deb
 
 sudo dpkg -i nomachine.deb
